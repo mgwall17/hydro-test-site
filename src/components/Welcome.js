@@ -30,7 +30,7 @@ const Welcome = () => {
           >
             <Grid item md={4}>
               <Image
-                src="/../public/images/squiggle2.png"
+                src="https://github.com/mgwall17/hydrogen-site/blob/main/public/images/squiggle2.png"
                 height="500px"
                 width="500px"
                 layout="responsive"
@@ -89,7 +89,7 @@ const Welcome = () => {
             <Grid item md={4}>
               {" "}
               <Image
-                src="/../public/images/squiggle.png"
+                src="https://github.com/mgwall17/hydrogen-site/blob/main/public/images/squiggle.png"
                 height="500px"
                 width="500px"
                 layout="responsive"
