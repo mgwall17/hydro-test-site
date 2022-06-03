@@ -11,6 +11,8 @@ import {
 } from "@mui/material";
 import HydroIconLarge from "../components/icons/HydroIconLarge";
 import Image from "next/image";
+import SquigglesL from "../../public/images/squigglesL";
+import SquigglesR from "../../public/images/squigglesR";
 
 // BANNER WOULD ONLY SHOW FOR LOGGED OUT VIEW
 
@@ -29,13 +31,7 @@ const Welcome = () => {
             spacing={1}
           >
             <Grid item md={4}>
-              <Image
-                src="/squiggle2.png"
-                height="500px"
-                width="500px"
-                loading="eager"
-                layout="responsive"
-              />
+              <SquigglesL />
             </Grid>
             <Grid item md={4}>
               <Typography
@@ -88,14 +84,7 @@ const Welcome = () => {
               </Typography>
             </Grid>
             <Grid item md={4}>
-              {" "}
-              <Image
-                src="/squiggle.png"
-                height="500px"
-                loading="eager"
-                width="500px"
-                layout="responsive"
-              />
+              <SquigglesR />
             </Grid>
           </Grid>
         </Paper>
