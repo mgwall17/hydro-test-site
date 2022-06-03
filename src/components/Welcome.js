@@ -14,7 +14,7 @@ import Image from "next/image";
 import SquigglesL from "../../public/images/squigglesL";
 import SquigglesR from "../../public/images/squigglesR";
 
-// BANNER WOULD ONLY SHOW FOR LOGGED OUT VIEW
+
 
 const Welcome = () => {
   return (
@@ -30,7 +30,7 @@ const Welcome = () => {
             alignItems="center"
             spacing={1}
           >
-            <Grid item md={4}>
+            <Grid item xs={0} md={4}>
               <SquigglesL />
             </Grid>
             <Grid item md={4}>
@@ -78,13 +78,17 @@ const Welcome = () => {
                 >
                   Sign Up
                 </Button>
-                <Button size="large" sx={{ margin: "2rem" }}>
-                  Log In
+                <Button
+                  size="large"
+                  sx={{ margin: "2rem" }}
+                  href="https://hydro-dev.princeton.edu/"
+                >
+                  Go to App
                 </Button>
               </Typography>
             </Grid>
-            <Grid item md={4}>
-              <SquigglesR />
+            <Grid item xs={0} md={4}>
+              <SquigglesR style={{ display: "hidden" }} />
             </Grid>
           </Grid>
         </Paper>

@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import Welcome from "../components/Welcome";
 import CardA from "../components/Cards/CardA";
+import CardB from "../components/Cards/CardB";
+import CardC from "../components/Cards/CardC";
 import { mdiWater } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -28,22 +30,23 @@ export default function Home() {
             <CardA />
           </Grid>
           <Grid item md={4}>
-            <CardA />
+            <CardB />
           </Grid>
           <Grid item md={4}>
-            <CardA />
+            <CardC />
           </Grid>
         </Grid>
 
-        <Box display="flex">
+        <Box
+          display="flex"
+          justifyContent={"flex-start"}
+          alignItems={"center"}
+          sx={{ marginBottom: "1rem" }}
+        >
           <Box sx={{ marginTop: ".2rem" }}>
             <Icon path={mdiWater} size={3} color="#1981bc" />
           </Box>
-          <Typography
-            variant="h2"
-            color="primary"
-            sx={{ marginBottom: "1rem" }}
-          >
+          <Typography variant="h4" color="primary">
             Why HydroGEN
           </Typography>
         </Box>
@@ -62,15 +65,16 @@ export default function Home() {
           purus. Turpis cursus in hac habitasse platea dictumst quisque.
         </Typography>
 
-        <Box display="flex" sx={{ marginTop: "2rem" }}>
+        <Box
+          display="flex"
+          justifyContent={"flex-start"}
+          alignItems={"center"}
+          sx={{ marginTop: "2rem", marginBottom: "1rem" }}
+        >
           <Box sx={{ marginTop: ".2rem" }}>
             <Icon path={mdiWater} size={3} color="#1981bc" />
           </Box>
-          <Typography
-            variant="h2"
-            color="primary"
-            sx={{ marginBottom: "1rem" }}
-          >
+          <Typography variant="h4" color="primary">
             About the Project
           </Typography>
         </Box>

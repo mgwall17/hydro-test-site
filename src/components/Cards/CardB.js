@@ -26,7 +26,7 @@ const CardA = () => {
           ></div>
           <Box sx={{ marginTop: "1rem" }}>
             <Typography color="primary" variant="h6" align="center">
-              Forecast Water Availability
+              Generate Local Forecasts
             </Typography>
           </Box>
           <Box sx={{ marginTop: "1rem" }}>
