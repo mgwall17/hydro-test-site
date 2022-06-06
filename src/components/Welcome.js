@@ -65,26 +65,29 @@ const Welcome = () => {
               <Typography
                 textAlign="center"
                 variant="h6"
+                color="secondary"
+                sx={{ marginTop: "1rem" }}
+              >
+                Hydrologic scenario Generation for a changing world
+              </Typography>
+              <Typography
+                textAlign="center"
+                fontSize={"1.2rem"}
                 color="primary"
                 sx={{ marginTop: "1rem" }}
               >
-                The Accessible Supercomputing and <br /> Machine Learning Tool
-                for Watershed Forecasting
+                Our mission is to better predict and prepare for the risks we
+                are facing by putting the best hydrologic science directly in
+                the hands of decision makers.
                 <br />
-                <Button
-                  variant="contained"
-                  size="large"
+                <Typography
+                  variant="overline"
+                  fontSize={"1.2rem"}
+                  color="textSecondary"
                   sx={{ margin: "2rem" }}
                 >
-                  Sign Up
-                </Button>
-                <Button
-                  size="large"
-                  sx={{ margin: "2rem" }}
-                  href="https://hydro-dev.princeton.edu/"
-                >
-                  Go to App
-                </Button>
+                  App coming soon
+                </Typography>
               </Typography>
             </Grid>
             <Grid item xs={0} md={4}>

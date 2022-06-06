@@ -13,28 +13,28 @@ import {
 const CardA = () => {
   return (
     <React.Fragment>
-      <Box sx={{ marginY: "2rem" }}>
+      <Box sx={{ marginY: "2rem", height: "250px" }}>
         <Box alignItems={"center"}>
           <div
             style={{
               width: "150px",
               height: "150px",
               margin: "0 auto",
-              backgroundColor: "#e2e2e2",
+              backgroundImage: "url(/images/card3.png)",
+              backgroundSize: "cover",
               borderRadius: "100%",
             }}
           ></div>
           <Box sx={{ marginTop: "1rem" }}>
             <Typography color="primary" variant="h6" align="center">
-              Reduce Cost of Prediction
+              Seasonal outlooks
             </Typography>
           </Box>
           <Box sx={{ marginTop: "1rem" }}>
             <Typography align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              We go beyond two week weather forecasts to provide ensembles of
+              seasonal forecasts, providing the lead time needed for decision
+              makers and planners.
             </Typography>
           </Box>
         </Box>

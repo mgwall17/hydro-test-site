@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <Paper elevation={3}>
-        <Container>
+        <Container maxWidth={"xl"}>
           <Box
             sx={{
               display: "flex",
@@ -43,8 +43,8 @@ const Header = () => {
               </Box>
             </Box>
             <Box display="flex">
-              <MenuItem>About</MenuItem> <MenuItem>Media</MenuItem>
-              <MenuItem>API</MenuItem>
+              {/* <MenuItem>About</MenuItem> <MenuItem>Media</MenuItem>
+                <MenuItem>API</MenuItem>*/}
             </Box>
           </Box>
         </Container>

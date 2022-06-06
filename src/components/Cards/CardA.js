@@ -13,28 +13,27 @@ import {
 const CardA = () => {
   return (
     <React.Fragment>
-      <Box sx={{ marginY: "2rem" }}>
+      <Box sx={{ marginY: "2rem", height: "250px" }}>
         <Box alignItems={"center"}>
           <div
             style={{
               width: "150px",
               height: "150px",
               margin: "0 auto",
-              backgroundColor: "#e2e2e2",
+              backgroundImage: "url(/images/card1.png)",
+              backgroundSize: "cover",
               borderRadius: "100%",
             }}
           ></div>
           <Box sx={{ marginTop: "1rem" }}>
             <Typography color="primary" variant="h6" align="center">
-              Forecast Water Availability
+              On demand watershed forecasts
             </Typography>
           </Box>
           <Box sx={{ marginTop: "1rem" }}>
             <Typography align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Users can quickly explore current and future watershed conditions
+              anywhere in the US without any modeling experience.
             </Typography>
           </Box>
         </Box>

@@ -25,6 +25,7 @@ export default function Home() {
           spacing={3}
           justifyContent="space-between"
           alignItems="center"
+          sx={{ marginBottom: "5rem" }}
         >
           <Grid item md={4}>
             <CardA />
@@ -44,25 +45,18 @@ export default function Home() {
           sx={{ marginBottom: "1rem" }}
         >
           <Box sx={{ marginTop: ".2rem" }}>
-            <Icon path={mdiWater} size={3} color="#1981bc" />
+            <Icon path={mdiWater} size={2} color="#1981bc" />
           </Box>
           <Typography variant="h4" color="primary">
-            Why HydroGEN
+            How do we do it?
           </Typography>
         </Box>
         <Typography sx={{ lineHeight: 1.7 }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in
-          hendrerit gravida rutrum. Tempus urna et pharetra pharetra massa massa
-          ultricies mi quis. Leo integer malesuada nunc vel risus commodo.
-          Molestie at elementum eu facilisis sed odio morbi quis commodo.
-          Venenatis urna cursus eget nunc scelerisque viverra mauris in. Orci
-          phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Ac
-          feugiat sed lectus vestibulum mattis ullamcorper. Sollicitudin nibh
-          sit amet commodo nulla facilisi nullam. Mattis rhoncus urna neque
-          viverra justo nec ultrices dui sapien. Semper quis lectus nulla at
-          volutpat. Molestie at elementum eu facilisis. Ut etiam sit amet nisl
-          purus. Turpis cursus in hac habitasse platea dictumst quisque.
+          We train machine learning models on advanced physics based simulations
+          and observations. These machine learning models allow users to explore
+          watershed conditions and build customized scenarios on the fly without
+          the extensive time and expertise typically needed to build a custom
+          watershed model.
         </Typography>
 
         <Box
@@ -72,25 +66,34 @@ export default function Home() {
           sx={{ marginTop: "2rem", marginBottom: "1rem" }}
         >
           <Box sx={{ marginTop: ".2rem" }}>
-            <Icon path={mdiWater} size={3} color="#1981bc" />
+            <Icon path={mdiWater} size={2} color="#1981bc" />
           </Box>
           <Typography variant="h4" color="primary">
-            About the Project
+            Our Team
           </Typography>
         </Box>
         <Typography sx={{ lineHeight: 1.7 }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in
-          hendrerit gravida rutrum. Tempus urna et pharetra pharetra massa massa
-          ultricies mi quis. Leo integer malesuada nunc vel risus commodo.
-          Molestie at elementum eu facilisis sed odio morbi quis commodo.
-          Venenatis urna cursus eget nunc scelerisque viverra mauris in. Orci
-          phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Ac
-          feugiat sed lectus vestibulum mattis ullamcorper. Sollicitudin nibh
-          sit amet commodo nulla facilisi nullam. Mattis rhoncus urna neque
-          viverra justo nec ultrices dui sapien. Semper quis lectus nulla at
-          volutpat. Molestie at elementum eu facilisis. Ut etiam sit amet nisl
-          purus. Turpis cursus in hac habitasse platea dictumst quisque.
+          Our team is an interdisciplinary group of hydrologists, software
+          engineers, data scientists and machine learning specialists, working
+          in academia, government and private industry. We came together through
+          the NSF convergence accelerator program with the shared vision of
+          improving hydrologic forecasts.
+        </Typography>
+        <Box
+          display="flex"
+          justifyContent={"flex-start"}
+          alignItems={"center"}
+          sx={{ marginTop: "2rem", marginBottom: "1rem" }}
+        >
+          <Box sx={{ marginTop: ".2rem" }}>
+            <Icon path={mdiWater} size={2} color="#1981bc" />
+          </Box>
+          <Typography variant="h4" color="primary">
+            Our application is coming soon!
+          </Typography>
+        </Box>
+        <Typography sx={{ lineHeight: 1.7 }}>
+          Please check back for more information when it is released.
         </Typography>
       </Container>
     </Layout>
