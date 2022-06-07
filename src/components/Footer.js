@@ -4,7 +4,7 @@ import React from "react";
 function Footer() {
   return (
     <React.Fragment>
-      <Box mb={3} mx={2} mt={4}>
+      <Box mb={3} mx={2} mt={7}>
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item md={12} align="center">
             <Typography variant="body2" color="inherit" align="center">

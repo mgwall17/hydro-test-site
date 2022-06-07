@@ -13,7 +13,7 @@ import {
 const CardA = () => {
   return (
     <React.Fragment>
-      <Box sx={{ marginY: "2rem", height: "250px" }}>
+      <Box sx={{ marginY: "2rem", height: "15.625rem" }}>
         <Box alignItems={"center"}>
           <div
             style={{

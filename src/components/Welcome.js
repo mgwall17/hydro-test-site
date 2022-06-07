@@ -30,13 +30,14 @@ const Welcome = () => {
             alignItems="center"
             spacing={1}
           >
-            <Grid item xs={0} md={4}>
+            <Grid item xs={0} md={3}>
               <SquigglesL />
             </Grid>
-            <Grid item md={4}>
+            <Grid item md={6}>
               <Typography
                 textAlign="center"
                 variant="h2"
+                component={"p"}
                 color="secondary"
                 fontSize={"2em"}
               >
@@ -62,35 +63,29 @@ const Welcome = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Typography
-                textAlign="center"
-                variant="h6"
-                color="secondary"
-                sx={{ marginTop: "1rem" }}
-              >
-                Hydrologic scenario Generation for a changing world
-              </Typography>
-              <Typography
-                textAlign="center"
-                fontSize={"1.2rem"}
-                color="primary"
-                sx={{ marginTop: "1rem" }}
-              >
-                Our mission is to better predict and prepare for the risks we
-                are facing by putting the best hydrologic science directly in
-                the hands of decision makers.
-                <br />
+              <Box>
                 <Typography
-                  variant="overline"
-                  fontSize={"1.2rem"}
-                  color="textSecondary"
-                  sx={{ margin: "2rem" }}
+                  textAlign="center"
+                  variant="h5"
+                  fontSize="2rem"
+                  color="secondary"
+                  sx={{ marginTop: "1rem" }}
                 >
-                  App coming soon
+                  Hydrologic Scenario Generation <br /> for a Changing World
+                  <br />
+                  <Typography
+                    variant="overline"
+                    fontSize={"1.2rem"}
+                    color="textSecondary"
+                    textAlign="center"
+                    sx={{ margin: "2rem" }}
+                  >
+                    App coming soon
+                  </Typography>
                 </Typography>
-              </Typography>
+              </Box>
             </Grid>
-            <Grid item xs={0} md={4}>
+            <Grid item xs={0} md={3}>
               <SquigglesR style={{ display: "hidden" }} />
             </Grid>
           </Grid>
