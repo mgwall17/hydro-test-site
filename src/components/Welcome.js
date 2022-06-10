@@ -1,20 +1,9 @@
 import * as React from "react";
-import {
-  Box,
-  Paper,
-  Avatar,
-  Grid,
-  IconButton,
-  Typography,
-  Button,
-  Tooltip,
-} from "@mui/material";
+import { Box, Paper, Avatar, Grid, IconButton, Typography, Button, Tooltip, } from "@mui/material";
 import HydroIconLarge from "../components/icons/HydroIconLarge";
 import Image from "next/image";
 import SquigglesL from "../../public/images/squigglesL";
 import SquigglesR from "../../public/images/squigglesR";
-
-
 
 const Welcome = () => {
   return (
@@ -31,7 +20,12 @@ const Welcome = () => {
             spacing={1}
           >
             <Grid item xs={0} md={3}>
-              <SquigglesL />
+              <Box
+                component="div"
+                sx={{ display: { sm: "none", md: "block" } }}
+              >
+                <SquigglesL />
+              </Box>
             </Grid>
             <Grid item md={6}>
               <Typography
@@ -86,7 +80,12 @@ const Welcome = () => {
               </Box>
             </Grid>
             <Grid item xs={0} md={3}>
-              <SquigglesR style={{ display: "hidden" }} />
+              <Box
+                component="div"
+                sx={{ display: { sm: "none", md: "block" } }}
+              >
+                <SquigglesR />
+              </Box>
             </Grid>
           </Grid>
         </Paper>
