@@ -112,7 +112,7 @@ export default function Home() {
                 backgroundSize: "cover",
                 width: "100%",
                 minWidth: "500px",
-                minHeight: "50vh",
+                minHeight: "34vh",
                 height: "100%",
                 backgroundPosition: "center",
                 borderRadius: "5px",
