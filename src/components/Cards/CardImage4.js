@@ -18,7 +18,7 @@ export default function CardImage4() {
         More Information and Guidance
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Use the right-hand sidebar for more information, in addition to educational resources to learn about we use machine learning, training and more.
+        Use the right-hand sidebar for more information, in addition to educational resources to learn about how we use machine learning, training and more.
         </Typography>
       </CardContent>
     </Card>
