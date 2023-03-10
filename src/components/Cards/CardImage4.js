@@ -8,9 +8,9 @@ import Typography from '@mui/material/Typography';
 
 export default function CardImage4() {
   return (
-    <Card sx={{ width: 512 }} elevation={0}>
+    <Card sx={{ width: 915 }} elevation={0}>
       <CardMedia
-        sx={{ height: 323,width: 512 }}
+        sx={{ height: 535,width: 915 }}
         image="/images/helpside.png"
       />
       <CardContent>

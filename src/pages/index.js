@@ -142,7 +142,7 @@ export default function Home() {
                 Our Application
               </Typography>
             </Box>
-          <Grid container direction="row" justifyContent="flex-start" spacing={3} alignContent="flex-start" alignItems="flex-start" sx={{padding:'1rem'}}>
+          <Grid container direction="column" justifyContent="center" spacing={3} alignContent="center" alignItems="center" sx={{padding:'1rem'}}>
             <Grid item>
           <CardImage1 />
           </Grid>
@@ -151,9 +151,6 @@ export default function Home() {
             </Grid>
             <Grid item>
             <CardImage3 />
-            </Grid>
-            <Grid item>
-            <CardImage4 />
             </Grid>
           </Grid>
         </Box>
