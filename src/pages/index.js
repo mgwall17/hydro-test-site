@@ -6,6 +6,7 @@ import {
   Grid,
   Container,
   Box,
+  Link,
   Typography,
 } from "@mui/material";
 import Welcome from "../components/Welcome";
@@ -14,6 +15,13 @@ import CardB from "../components/Cards/CardB";
 import CardC from "../components/Cards/CardC";
 import { mdiWater } from "@mdi/js";
 import Icon from "@mdi/react";
+import CardImage1 from "../components/Cards/CardImage1";
+import CardImage2 from "../components/Cards/CardImage2";
+import CardImage3 from "../components/Cards/CardImage3";
+import CardImage4 from "../components/Cards/CardImage4";
+import CampaignIcon from '@mui/icons-material/Campaign';
+import MoreInfo from "../components/MoreInfo";
+
 
 export default function Home() {
   return (
@@ -51,6 +59,7 @@ export default function Home() {
             <CardC />
           </Grid>
         </Grid>
+        <Paper sx={{padding:'1rem'}}>
         <Grid container direction="row" justifyContent={"center"} spacing={2}>
           <Grid item md={6}>
             <Box
@@ -73,7 +82,6 @@ export default function Home() {
               scenarios on the fly without the extensive time and expertise
               typically needed to build a custom watershed model.
             </Typography>
-
             <Box
               display="flex"
               justifyContent={"flex-start"}
@@ -94,23 +102,9 @@ export default function Home() {
               together through the NSF convergence accelerator program with the
               shared vision of improving hydrologic forecasts.
             </Typography>
-            <Box
-              display="flex"
-              justifyContent={"flex-start"}
-              alignItems={"center"}
-              sx={{ marginTop: "2rem", marginBottom: "1rem" }}
-            >
-              <Box sx={{ marginTop: ".2rem" }}>
-                <Icon path={mdiWater} size={2} color="#1981bc" />
-              </Box>
-              <Typography variant="h4" color="primary">
-                Our application is coming soon!
-              </Typography>
-            </Box>
-            <Typography sx={{ lineHeight: 1.7 }}>
-              Please check back for more information when it is released.
-            </Typography>
+            
           </Grid>
+        
           <Grid item md={6}>
             <div
               style={{
@@ -132,7 +126,41 @@ export default function Home() {
               Photos by Drew Bennett
             </Typography>
           </Grid>
+       
         </Grid>
+        <Box mt={4}>
+          <Box
+              display="flex"
+              justifyContent={"flex-start"}
+              alignItems={"center"}
+              sx={{ marginTop: "2rem", marginBottom: "1rem" }}
+            >
+              <Box sx={{ marginTop: ".2rem" }}>
+                <Icon path={mdiWater} size={2} color="#1981bc" />
+              </Box>
+              <Typography variant="h4" color="primary">
+                Our Application
+              </Typography>
+            </Box>
+          <Grid container direction="row" justifyContent="flex-start" spacing={3} alignContent="flex-start" alignItems="flex-start" sx={{padding:'1rem'}}>
+            <Grid item>
+          <CardImage1 />
+          </Grid>
+          <Grid item>
+            <CardImage2 />
+            </Grid>
+            <Grid item>
+            <CardImage3 />
+            </Grid>
+            <Grid item>
+            <CardImage4 />
+            </Grid>
+          </Grid>
+        </Box>
+        </Paper>
+        <Box mt={2}>
+          <MoreInfo />
+        </Box>
       </Container>
     </Layout>
   );

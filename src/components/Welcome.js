@@ -1,9 +1,10 @@
 import * as React from "react";
-import { Box, Paper, Avatar, Grid, IconButton, Typography, Button, Tooltip, } from "@mui/material";
+import { Box, Paper, Link, Avatar, Grid, IconButton, Typography, Button, Tooltip, } from "@mui/material";
 import HydroIconLarge from "../components/icons/HydroIconLarge";
 import Image from "next/image";
 import SquigglesL from "../../public/images/squigglesL";
 import SquigglesR from "../../public/images/squigglesR";
+import { OpenInNew } from "@mui/icons-material";
 
 const Welcome = () => {
   return (
@@ -57,26 +58,34 @@ const Welcome = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box>
+              <Box sx={{ textAlign: "center", marginTop: "1rem" }}>
                 <Typography
-                  textAlign="center"
                   variant="h5"
                   fontSize="2rem"
                   color="secondary"
-                  sx={{ marginTop: "1rem" }}
                 >
-                  Hydrologic Scenario Generation <br /> for a Changing World
-                  <br />
-                  <Typography
-                    variant="overline"
-                    fontSize={"1.2rem"}
-                    color="textSecondary"
-                    textAlign="center"
-                    sx={{ margin: "2rem" }}
-                  >
-                    App coming soon
-                  </Typography>
-                </Typography>
+                  Hydrologic Scenario Generation <br /> for a Changing World</Typography>
+              </Box>
+              <Box
+                justifyContent="center"
+                alignItems="center"
+                alignContent="center"
+                mt={2}
+                display="flex"
+                direction="column"
+              >
+                <Box><Button endIcon={<OpenInNew />} size="large" variant="contained" target="_blank" href="https://hydrogen.princeton.edu/">
+                  Open Application
+                </Button></Box></Box>
+              <Box justifyContent="center"
+                alignItems="center"
+                alignContent="center"
+                my={2}
+                display="flex"
+                direction="column">
+                <Link style={{ fontWeight: 'bold' }} href="https://forms.gle/7wxG2DGibFEu4QWZ9" target="_blank">
+                  Subscribe for Future Release
+                </Link>
               </Box>
             </Grid>
             <Grid item xs={0} md={3}>
