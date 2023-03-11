@@ -74,10 +74,11 @@ const Welcome = () => {
                 display="flex"
                 direction="column"
               >
+                {/*
                 <Typography variant="h6">New Release Coming Soon</Typography>
-                 {/* <Box><Button endIcon={<OpenInNew />} size="large" variant="contained" disabled target="_blank" href="https://hydrogen.princeton.edu/">
+                  <Box><Button endIcon={<OpenInNew />} size="large" variant="contained" disabled target="_blank" href="https://hydrogen.princeton.edu/">
                   Open Application
-                </Button></Box> */}
+                </Button></Box> 
                 </Box>
               <Box justifyContent="center"
                 alignItems="center"
@@ -87,9 +88,9 @@ const Welcome = () => {
                 direction="column">
                 <Link style={{ fontWeight: 'bold' }} href="https://forms.gle/7wxG2DGibFEu4QWZ9" target="_blank">
                   Subscribe for Future Access
-                </Link>
-              </Box>
-            </Grid>
+                </Link> */}
+              </Box> 
+            </Grid> 
             <Grid item xs={0} md={3}>
               <Box
                 component="div"
